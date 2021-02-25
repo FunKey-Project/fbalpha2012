@@ -15,8 +15,8 @@ Run `./compile_libretro.sh make platform=funkey`
 * If it does not exist yet, create the `/mnt/FunKey/.sdlretro/cores`
   folder.
 
-* Copy the `svn-current/trunk/fbalpha2012_libretro.sowb` file as
-  `fbalpha2012_libretro.so sdlretro.opk` into this folder.
+* Copy the `svn-current/trunk/fbalpha2012_libretro.so` file into this
+  folder.
 
 # Run
 
