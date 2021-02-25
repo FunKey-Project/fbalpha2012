@@ -1,3 +1,4 @@
 *.so
+*.sowb
 *.o
 *.dll
