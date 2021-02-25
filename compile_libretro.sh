@@ -16,13 +16,13 @@ clean()
 make_libretro()
 {
    cd $SRC_DIR
-	make -f makefile.libretro -j4
+	make -f makefile.libretro -j4 $*
 }
 
 make_debug()
 {
    cd $SRC_DIR
-	make -f makefile.libretro -j4 DEBUG=1
+	make -f makefile.libretro -j4 DEBUG=1 $*
 }
 
 #******************
@@ -91,17 +91,19 @@ else
 			echo ""
 			echo "*************************************"
 			echo "DOING:"
+			shift
 			display_make
 			echo "*************************************"
-			make_libretro
+			make_libretro $*
 		fi
 		if [ "$i" = "make_debug" ]; then
 			echo ""
 			echo "*************************************"
 			echo "DOING:"
+			shift
 			display_make
 			echo "*************************************"
-			make_debug
+			make_debug $*
 		fi
 	done
 fi
