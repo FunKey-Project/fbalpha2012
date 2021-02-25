@@ -1,4 +1,4 @@
-# sdlretro
+# fbalpha2012-libretro
 
 This is port of Final Burn Alpha 2012 to Libretro (0.2.97.24) with
 SDL1.2 on the FunKey S.
