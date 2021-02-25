@@ -16,13 +16,13 @@ clean()
 make_libretro()
 {
    cd $SRC_DIR
-	make -f makefile.libretro -j4 $*
+	make -f makefile.libretro -j8 $*
 }
 
 make_debug()
 {
    cd $SRC_DIR
-	make -f makefile.libretro -j4 DEBUG=1 $*
+	make -f makefile.libretro -j8 DEBUG=1 $*
 }
 
 #******************
