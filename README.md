@@ -5,7 +5,8 @@ SDL1.2 on the FunKey S.
 
 # Build
 
-Run `./compile_libretro.sh make platform=funkey`
+* Add the FunKey SDK binaries to the PATH by launching `source path_to_funkey_SDK/environment-setup`
+* Run `./compile_libretro.sh make platform=funkey`
 
 # Installation for FunKey
 
