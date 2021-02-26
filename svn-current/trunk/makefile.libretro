@@ -331,10 +331,10 @@ else ifeq ($(platform), gcw0)
 else ifeq ($(platform), funkey)
    TARGET := $(TARGET_NAME)_libretro.so
    OD_TOOLCHAIN ?= /opt/FunKey-sdk-2.0.0/
-   CC := $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-gcc
-   CXX := $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-g++
-   LD := $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-gcc
-   AR = $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-ar
+   #CC := $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-gcc
+   #CXX := $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-g++
+   #LD := $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-gcc
+   #AR = $(OD_TOOLCHAIN)bin/arm-funkey-linux-musleabihf-ar
    fpic := -fPIC
    SHARED := -shared -Wl,-no-undefined -Wl,--version-script=$(LIBRETRO_DIR)/link.T
    CFLAGS += -Ofast \
