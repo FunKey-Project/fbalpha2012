@@ -3,9 +3,9 @@
 This is port of Final Burn Alpha 2012 to Libretro (0.2.97.24) with
 SDL1.2 on the FunKey S.
 
-# Build
+# Linux build
 
-* Add the FunKey SDK binaries to the PATH by launching `source path_to_funkey_SDK/environment-setup`
+* Add the FunKey SDK binaries to your PATH by launching `source path_to_funkey_SDK/environment-setup`
 * Run `./compile_libretro.sh make platform=funkey`
 
 # Installation for FunKey
